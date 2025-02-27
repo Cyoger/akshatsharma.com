@@ -13,6 +13,11 @@ module.exports = {
       inset: {
         '1/10': '10%',
       },
+      fontFamily: {
+        'cyber': ['Major Mono Display', 'monospace'],
+        'futuristic': ['Orbitron', 'sans-serif'],
+        'terminal': ['VT323', 'monospace'],
+      },
     },
   },
   plugins: [],

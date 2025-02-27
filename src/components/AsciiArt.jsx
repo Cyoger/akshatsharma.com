@@ -15,6 +15,11 @@ const AsciiArt = () => {
   return (
     <div className="relative w-full max-w-4xl mx-auto pt-20 mt-8 md:mt-0 z-30">
       <div className="flex flex-col items-center">
+        {/* Title - centered at top for all screen sizes with futuristic font */}
+        <h1 className="text-center text-4xl uppercase tracking-widest mb-8 font-futuristic font-bold text-shadow hover:text-neon-green transition-colors duration-300">
+          Akshat Sharma
+        </h1>
+        
         {/* ASCII art for larger screens */}
         <pre className="text-green-400 text-xs leading-none whitespace-pre text-center transition-all duration-800 hover:scale-105 hover:tracking-wider hover:opacity-100 hover:shadow hover:shadow-green-400 opacity-90 hidden sm:block">
 {`
@@ -52,14 +57,6 @@ const AsciiArt = () => {
           software engineer // digital poet
         </div>
       </div>
-      
-      {/* Title - vertical on desktop, horizontal on mobile */}
-      <h1 className="absolute right-10 top-1/4 h-1/2 uppercase tracking-widest text-4xl writing-vertical-rl rotate-180 text-shadow shadow-black/50 md:block hidden">
-        Akshat Sharma
-      </h1>
-      <h1 className="text-center text-4xl uppercase tracking-widest my-8 md:hidden">
-        Akshat Sharma
-      </h1>
     </div>
   );
 };
