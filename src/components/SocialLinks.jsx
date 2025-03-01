@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin} from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt} from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
 const SocialLinks = () => {
@@ -7,6 +7,8 @@ const SocialLinks = () => {
     { icon: FaGithub, url: 'https://github.com/Cyoger', label: 'GitHub' },
     { icon: FaLinkedin, url: 'https://www.linkedin.com/in/akshat8d/', label: 'LinkedIn' },
     { icon: FaXTwitter, url: 'https://x.com/Cy0ger', label: 'X' },
+    { icon: FaEnvelope, url: 'mailto:contact@akshatsharma.com', label: 'Email' },
+    { icon: FaFileAlt, url: '/resume.pdf', label: 'Resume' },
   ];
 
   return (
