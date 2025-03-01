@@ -1,4 +1,3 @@
-// File: src/components/ProjectCard.jsx
 import React from 'react';
 
 const ProjectCard = ({ project }) => {

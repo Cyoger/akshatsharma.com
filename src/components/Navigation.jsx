@@ -1,4 +1,3 @@
-// File: src/components/Navigation.jsx
 import React, { useState } from 'react';
 
 const Navigation = () => {
