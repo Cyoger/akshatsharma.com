@@ -18,11 +18,11 @@ const Navigation = () => {
 
       {/* Desktop Navigation */}
       <nav className="fixed top-1/2 left-10 transform -translate-y-1/2 flex-col space-y-5 z-40 bg-black/30 p-3 backdrop-blur-sm rounded hidden md:flex">
-        <a href="#" className="text-white/60 hover:text-yellow-400 hover:shadow-md hover:shadow-yellow-400/20 transition-all duration-300 hover:translate-x-1">Home</a>
-        <a href="#about" className="text-white/60 hover:text-yellow-400 hover:shadow-md hover:shadow-yellow-400/20 transition-all duration-300 hover:translate-x-1">About</a>
-        <a href="#projects" className="text-white/60 hover:text-yellow-400 hover:shadow-md hover:shadow-yellow-400/20 transition-all duration-300 hover:translate-x-1">Projects</a>
-        <a href="#skills" className="text-white/60 hover:text-yellow-400 hover:shadow-md hover:shadow-yellow-400/20 transition-all duration-300 hover:translate-x-1">Skills</a>
-        <a href="#contact" className="text-white/60 hover:text-yellow-400 hover:shadow-md hover:shadow-yellow-400/20 transition-all duration-300 hover:translate-x-1">Contact</a>
+        <a href="#" className="text-white/60 hover:text-green-400 hover:shadow-md hover:shadow-green-400/20 transition-all duration-300 hover:translate-x-1">Home</a>
+        <a href="#about" className="text-white/60 hover:text-green-400 hover:shadow-md hover:shadow-green-400/20 transition-all duration-300 hover:translate-x-1">About</a>
+        <a href="#projects" className="text-white/60 hover:text-green-400 hover:shadow-md hover:shadow-green-400/20 transition-all duration-300 hover:translate-x-1">Projects</a>
+        <a href="#skills" className="text-white/60 hover:text-green-400 hover:shadow-md hover:shadow-green-400/20 transition-all duration-300 hover:translate-x-1">Skills</a>
+        <a href="#contact" className="text-white/60 hover:text-green-400 hover:shadow-md hover:shadow-green-400/20 transition-all duration-300 hover:translate-x-1">Contact</a>
       </nav>
 
       {/* Mobile Navigation Overlay */}
@@ -32,35 +32,35 @@ const Navigation = () => {
         <nav className="flex flex-col items-center space-y-8">
           <a 
             href="#" 
-            className="text-white/80 text-2xl hover:text-yellow-400 transition-all duration-300"
+            className="text-white/80 text-2xl hover:text-green-400 transition-all duration-300"
             onClick={() => setIsOpen(false)}
           >
             Home
           </a>
           <a 
             href="#about" 
-            className="text-white/80 text-2xl hover:text-yellow-400 transition-all duration-300"
+            className="text-white/80 text-2xl hover:text-green-400 transition-all duration-300"
             onClick={() => setIsOpen(false)}
           >
             About
           </a>
           <a 
             href="#projects" 
-            className="text-white/80 text-2xl hover:text-yellow-400 transition-all duration-300"
+            className="text-white/80 text-2xl hover:text-green-400 transition-all duration-300"
             onClick={() => setIsOpen(false)}
           >
             Projects
           </a>
           <a 
             href="#skills" 
-            className="text-white/80 text-2xl hover:text-yellow-400 transition-all duration-300"
+            className="text-white/80 text-2xl hover:text-green-400 transition-all duration-300"
             onClick={() => setIsOpen(false)}
           >
             Skills
           </a>
           <a 
             href="#contact" 
-            className="text-white/80 text-2xl hover:text-yellow-400 transition-all duration-300"
+            className="text-white/80 text-2xl hover:text-green-400 transition-all duration-300"
             onClick={() => setIsOpen(false)}
           >
             Contact
