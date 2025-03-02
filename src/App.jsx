@@ -36,10 +36,10 @@ function App() {
           <h2 className="text-2xl text-center md:text-left uppercase tracking-widest mb-4 md:mb-6 text-white/90">About</h2>
           <div className="bg-black/30 backdrop-blur-sm p-4 md:p-6 rounded">
             <p className="text-white/80 mb-4">
-              I craft digital experiences at the intersection of functionality and aesthetics. With a focus on modern web technologies and innovative solutions, I bring ideas to life through clean, efficient code.
+              I'm a software engineer with a passion for solving complex problems through clean, efficient code. My expertise spans from building robust applications to exploring the intricate world of embedded systems.
             </p>
             <p className="text-white/80">
-              My approach draws inspiration from cinematic storytelling - creating immersive digital spaces that engage and resonate. Each project is a composition of technical precision and creative expression.
+              As an AI/ML enthusiast, I'm constantly exploring the intersection of machine learning algorithms and practical applications. I thrive on creating innovative solutions that bridge hardware limitations with software possibilities.
             </p>
           </div>
         </section>
