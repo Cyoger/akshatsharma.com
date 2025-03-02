@@ -19,7 +19,7 @@ const Navigation = () => {
       {/* Desktop Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-40 hidden md:flex justify-center items-center h-16 bg-black/50 backdrop-blur-md">
         <div className="container max-w-6xl mx-auto px-4 flex justify-center space-x-8">
-          <a href="#" className="text-white/60 hover:text-green-400 hover:border-b hover:border-green-400/50 py-1 transition-all duration-300">Home</a>
+          <a href="#home" className="text-white/60 hover:text-green-400 hover:border-b hover:border-green-400/50 py-1 transition-all duration-300">Home</a>
           <a href="#about" className="text-white/60 hover:text-green-400 hover:border-b hover:border-green-400/50 py-1 transition-all duration-300">About</a>
           <a href="#projects" className="text-white/60 hover:text-green-400 hover:border-b hover:border-green-400/50 py-1 transition-all duration-300">Projects</a>
           <a href="#skills" className="text-white/60 hover:text-green-400 hover:border-b hover:border-green-400/50 py-1 transition-all duration-300">Skills</a>
@@ -33,7 +33,7 @@ const Navigation = () => {
       >
         <nav className="flex flex-col items-center space-y-8">
           <a 
-            href="#" 
+            href="#home" 
             className="text-white/80 text-2xl hover:text-green-400 transition-all duration-300"
             onClick={() => setIsOpen(false)}
           >
