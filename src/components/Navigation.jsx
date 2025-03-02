@@ -17,12 +17,14 @@ const Navigation = () => {
       </button>
 
       {/* Desktop Navigation */}
-      <nav className="fixed top-1/2 left-10 transform -translate-y-1/2 flex-col space-y-5 z-40 bg-black/30 p-3 backdrop-blur-sm rounded hidden md:flex">
-        <a href="#" className="text-white/60 hover:text-green-400 hover:shadow-md hover:shadow-green-400/20 transition-all duration-300 hover:translate-x-1">Home</a>
-        <a href="#about" className="text-white/60 hover:text-green-400 hover:shadow-md hover:shadow-green-400/20 transition-all duration-300 hover:translate-x-1">About</a>
-        <a href="#projects" className="text-white/60 hover:text-green-400 hover:shadow-md hover:shadow-green-400/20 transition-all duration-300 hover:translate-x-1">Projects</a>
-        <a href="#skills" className="text-white/60 hover:text-green-400 hover:shadow-md hover:shadow-green-400/20 transition-all duration-300 hover:translate-x-1">Skills</a>
-        <a href="#contact" className="text-white/60 hover:text-green-400 hover:shadow-md hover:shadow-green-400/20 transition-all duration-300 hover:translate-x-1">Contact</a>
+      <nav className="fixed top-0 left-0 right-0 z-40 hidden md:flex justify-center items-center h-16 bg-black/50 backdrop-blur-md">
+        <div className="container max-w-6xl mx-auto px-4 flex justify-center space-x-8">
+          <a href="#" className="text-white/60 hover:text-green-400 hover:border-b hover:border-green-400/50 py-1 transition-all duration-300">Home</a>
+          <a href="#about" className="text-white/60 hover:text-green-400 hover:border-b hover:border-green-400/50 py-1 transition-all duration-300">About</a>
+          <a href="#projects" className="text-white/60 hover:text-green-400 hover:border-b hover:border-green-400/50 py-1 transition-all duration-300">Projects</a>
+          <a href="#skills" className="text-white/60 hover:text-green-400 hover:border-b hover:border-green-400/50 py-1 transition-all duration-300">Skills</a>
+          <a href="#contact" className="text-white/60 hover:text-green-400 hover:border-b hover:border-green-400/50 py-1 transition-all duration-300">Contact</a>
+        </div>
       </nav>
 
       {/* Mobile Navigation Overlay */}
