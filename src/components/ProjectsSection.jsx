@@ -5,8 +5,8 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: 'Project One',
-      description: 'A brief description that captures the essence of this project while maintaining the aesthetic of Wong Kar-wai and Christopher Doyle\'s visual style.'
+      title: 'Application of GANs in Resistance Spot Welding',
+      description: 'Explored synthetic data generation using Generative Adversarial Networks such as DCGAN, WGAN, and Pix2Pix GAN. This project compared different architectures to assess their effectiveness in generating realistic Ultrasonic Resistance Spot Welds, enhancing data augmentation, and assist in improving deep learning applications.'
     },
     {
       id: 2,
