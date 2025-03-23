@@ -8,7 +8,7 @@ import Clock from './components/Clock';
 
 import AsciiArt from './components/AsciiArt';
 
-import ProjectsSection from './components/ProjectsSection';
+// import ProjectsSection from './components/ProjectsSection';
 
 import AsciiRain from './components/AsciiRain';
 
