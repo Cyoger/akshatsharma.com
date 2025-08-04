@@ -40,7 +40,7 @@ const AsciiArt = () => {
         </div>
         
         <div className="mt-4 text-lg opacity-80 lowercase tracking-widest">
-          software engineer // digital poet
+          software engineer
         </div>
       </div>
     </div>

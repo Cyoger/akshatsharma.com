@@ -21,6 +21,7 @@ const Navigation = () => {
         <div className="container max-w-6xl mx-auto px-4 flex justify-center space-x-8">
           <a href="#home" className="text-white/60 hover:text-green-400 hover:border-b hover:border-green-400/50 py-1 transition-all duration-300">Home</a>
           <a href="#about" className="text-white/60 hover:text-green-400 hover:border-b hover:border-green-400/50 py-1 transition-all duration-300">About</a>
+          <a href="#experience" className="text-white/60 hover:text-green-400 hover:border-b hover:border-green-400/50 py-1 transition-all duration-300">Experience</a>
           {/* <a href="#projects" className="text-white/60 hover:text-green-400 hover:border-b hover:border-green-400/50 py-1 transition-all duration-300">Projects</a> */}
           <a href="#skills" className="text-white/60 hover:text-green-400 hover:border-b hover:border-green-400/50 py-1 transition-all duration-300">Skills</a>
           <a href="#contact" className="text-white/60 hover:text-green-400 hover:border-b hover:border-green-400/50 py-1 transition-all duration-300">Contact</a>
@@ -45,6 +46,13 @@ const Navigation = () => {
             onClick={() => setIsOpen(false)}
           >
             About
+          </a>
+          <a 
+            href="#experience" 
+            className="text-white/80 text-2xl hover:text-green-400 transition-all duration-300"
+            onClick={() => setIsOpen(false)}
+          >
+            Experience
           </a>
           {/* <a 
             href="#projects" 
