@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
 import Navigation from './Navigation';
 import SocialLinks from './SocialLinks';
 import AsciiArt from './AsciiArt';
@@ -92,7 +93,37 @@ const Home = () => {
         </section>
         
         {/* Projects Section */}
-        {/* <ProjectsSection /> */}
+        <section id="projects" className="relative mt-24 md:mt-32 w-full max-w-6xl mx-auto z-30 px-4 md:px-5">
+          <h2 className="text-2xl text-center md:text-left uppercase tracking-widest mb-4 md:mb-6 text-white/90">Projects</h2>
+          <div className="space-y-6">
+            <div className="bg-black/30 backdrop-blur-sm p-4 md:p-6 rounded">
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-3">
+                <div>
+                  <h3 className="text-lg md:text-xl text-green-400 font-semibold">Charty</h3>
+                  <p className="text-white/80">TUI stock chart viewer in your terminal</p>
+                </div>
+                <a
+                  href="https://github.com/Cyoger/charty"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-2 md:mt-0 text-sm px-3 py-1 bg-green-400/20 hover:bg-green-400/30 text-green-400 border border-green-400/50 rounded transition-all duration-300 self-start"
+                >
+                  <FaGithub className="inline mr-1 mb-0.5" />GitHub
+                </a>
+              </div>
+              <p className="text-white/70 text-sm md:text-base mb-3">
+                A terminal-based application for viewing real-time stock charts without leaving the command line. Built with a focus on speed and minimal resource usage.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {['Rust', 'TUI'].map((tag) => (
+                  <span key={tag} className="px-3 py-1 bg-black/20 text-white/80 rounded-full text-sm">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Skills Section */}
         <section id="skills" className="relative mt-24 md:mt-32 w-full max-w-6xl mx-auto z-30 px-4 md:px-5">
@@ -102,7 +133,7 @@ const Home = () => {
             <div className="bg-black/30 backdrop-blur-sm p-5 rounded">
               <h3 className="text-xl border-b border-green-400/30 pb-2 mb-4 text-green-400">Languages</h3>
               <div className="flex flex-wrap gap-2">
-                {['C', 'C++', 'Python', 'Go', 'Java', 'JavaScript', 'SQL'].map((skill) => (
+                {['C', 'C++', 'Rust', 'Python', 'Go', 'Java', 'JavaScript'].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-black/20 text-white/80 hover:text-green-400 hover:bg-black/40 rounded-full text-sm transition-all duration-300">
                     {skill}
                   </span>
@@ -126,7 +157,7 @@ const Home = () => {
             <div className="bg-black/30 backdrop-blur-sm p-5 rounded">
               <h3 className="text-xl border-b border-green-400/30 pb-2 mb-4 text-green-400">Backend & Tools</h3>
               <div className="flex flex-wrap gap-2">
-                {['Node.js', 'MongoDB', 'PostgreSQL', 'Docker', 'Git', 'CI/CD'].map((skill) => (
+                {['Redis', 'PostgreSQL', 'Docker', 'Git', 'CI/CD'].map((skill) => (
                   <span key={skill} className="px-3 py-1 bg-black/20 text-white/80 hover:text-green-400 hover:bg-black/40 rounded-full text-sm transition-all duration-300">
                     {skill}
                   </span>
