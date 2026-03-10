@@ -33,8 +33,8 @@ const AsciiArt = () => {
           Akshat Sharma
         </h1>
         
-        <div className="ascii-container w-full overflow-x-hidden no-scrollbar">
-          <pre className="text-green-400 leading-none whitespace-pre text-center transition-all duration-800 hover:scale-105 hover:tracking-wider hover:opacity-100 hover:shadow hover:shadow-green-400 opacity-90">
+        <div className="ascii-container w-full overflow-x-auto no-scrollbar">
+          <pre className="text-green-400 leading-none whitespace-pre text-center opacity-90">
             {largeAsciiArt}
           </pre>
         </div>

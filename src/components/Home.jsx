@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaGithub } from 'react-icons/fa';
 import Navigation from './Navigation';
 import SocialLinks from './SocialLinks';
@@ -7,6 +7,15 @@ import AsciiRain from './AsciiRain';
 import BlurMotion from './BlurMotion';
 
 const Home = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => entries.forEach(e => e.isIntersecting && e.target.classList.add('visible')),
+      { threshold: 0.1 }
+    );
+    document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="relative min-h-screen bg-gray-900 text-white overflow-hidden">
       {/* Gradient Overlay */}
@@ -27,7 +36,7 @@ const Home = () => {
         <AsciiArt />
 
         {/* About Section */}
-        <section id="about" className="relative mt-24 md:mt-32 w-full max-w-6xl mx-auto z-30 px-4 md:px-5">
+        <section id="about" className="fade-in-up relative mt-24 md:mt-32 w-full max-w-6xl mx-auto z-30 px-4 md:px-5">
           <h2 className="text-2xl text-center md:text-left uppercase tracking-widest mb-4 md:mb-6 text-white/90">About</h2>
           <div className="bg-black/30 backdrop-blur-sm p-4 md:p-6 rounded">
             <p className="text-white/80 mb-4">
@@ -40,7 +49,7 @@ const Home = () => {
         </section>
 
         {/* Work Experience Section */}
-        <section id="experience" className="relative mt-24 md:mt-32 w-full max-w-6xl mx-auto z-30 px-4 md:px-5">
+        <section id="experience" className="fade-in-up relative mt-24 md:mt-32 w-full max-w-6xl mx-auto z-30 px-4 md:px-5">
           <h2 className="text-2xl text-center md:text-left uppercase tracking-widest mb-4 md:mb-6 text-white/90">Experience</h2>
           <div className="space-y-6">
             {/* Add your work experiences here */}
@@ -93,7 +102,7 @@ const Home = () => {
         </section>
         
         {/* Projects Section */}
-        <section id="projects" className="relative mt-24 md:mt-32 w-full max-w-6xl mx-auto z-30 px-4 md:px-5">
+        <section id="projects" className="fade-in-up relative mt-24 md:mt-32 w-full max-w-6xl mx-auto z-30 px-4 md:px-5">
           <h2 className="text-2xl text-center md:text-left uppercase tracking-widest mb-4 md:mb-6 text-white/90">Projects</h2>
           <div className="space-y-6">
             <div className="bg-black/30 backdrop-blur-sm p-4 md:p-6 rounded">
@@ -126,7 +135,7 @@ const Home = () => {
         </section>
 
         {/* Skills Section */}
-        <section id="skills" className="relative mt-24 md:mt-32 w-full max-w-6xl mx-auto z-30 px-4 md:px-5">
+        <section id="skills" className="fade-in-up relative mt-24 md:mt-32 w-full max-w-6xl mx-auto z-30 px-4 md:px-5">
           <h2 className="text-2xl text-center md:text-left uppercase tracking-widest mb-4 md:mb-6 text-white/90">Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {/* Languages */}
@@ -168,13 +177,13 @@ const Home = () => {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="relative mt-24 md:mt-32 w-full max-w-6xl mx-auto z-30 px-4 md:px-5 mb-24">
+        <section id="contact" className="fade-in-up relative mt-24 md:mt-32 w-full max-w-6xl mx-auto z-30 px-4 md:px-5 mb-24">
           <h2 className="text-2xl text-center md:text-left uppercase tracking-widest mb-4 md:mb-6 text-white/90">Contact</h2>
           <div className="bg-black/30 backdrop-blur-sm p-4 md:p-6 rounded text-center md:text-left">
             <p className="text-white/80 mb-6">
               Interested in working together? Let's create something meaningful.
             </p>
-            <a href="mailto:akshat@akshatsharma.com" className="inline-block px-5 py-3 bg-green-400/20 hover:bg-green-400/30 text-green-400 border border-green-400/50 rounded transition-all duration-300 hover:scale-105">
+            <a href="mailto:akshat@akshatsharma.ca" className="inline-block px-5 py-3 bg-green-400/20 hover:bg-green-400/30 text-green-400 border border-green-400/50 rounded transition-all duration-300 hover:scale-105">
               Get in touch
             </a>
           </div>
