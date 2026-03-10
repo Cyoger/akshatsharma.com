@@ -8,7 +8,7 @@ const SocialLinks = () => {
     { icon: FaGithub, url: 'https://github.com/Cyoger', label: 'GitHub', external: true },
     { icon: FaLinkedin, url: 'https://www.linkedin.com/in/akshat8d/', label: 'LinkedIn', external: true },
     { icon: FaXTwitter, url: 'https://x.com/Cy0ger', label: 'X', external: true },
-    { icon: FaEnvelope, url: 'mailto:contact@akshatsharma.com', label: 'Email', external: true },
+    { icon: FaEnvelope, url: 'mailto:akshat@akshatsharma.ca', label: 'Email', external: true },
     { icon: FaFileAlt, url: '/resume', label: 'Resume', external: false },
   ];
 
