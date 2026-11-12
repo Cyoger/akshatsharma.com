@@ -48,6 +48,20 @@
     <title>Akshat Sharma</title>
   </head>
   <body>
+    <script>
+      // Restore the deep link passed by 404.html (GitHub Pages SPA redirect trick).
+      // Kept in <body> (not <head>) so the relative ./static asset URLs in <head> are
+      // resolved against "/" before the URL changes; still runs before the deferred bundle.
+      (function () {
+        try {
+          var path = new URLSearchParams(window.location.search).get('path');
+          // Only accept same-origin paths: a single leading "/" (not "//" or "/\")
+          if (path && path.charAt(0) === '/' && path.charAt(1) !== '/' && path.charAt(1) !== '\\') {
+            window.history.replaceState(null, '', path);
+          }
+        } catch (e) {}
+      })();
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
